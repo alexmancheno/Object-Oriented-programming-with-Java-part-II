@@ -1,10 +1,8 @@
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class RingingCentre {
 
@@ -15,10 +13,9 @@ public class RingingCentre {
     }
 
     public void observe(Bird bird, String place) {
-        if (!observations.containsKey(bird)) 
+        if (!observations.keySet().contains(bird)) 
             observations.put(bird, new ArrayList<String>());
-        else 
-            observations.get(bird).add(place);
+        observations.get(bird).add(place);
     }
 
     public void observations(Bird bird) {

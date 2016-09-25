@@ -31,5 +31,3 @@ public class Bird {
         return latinName.hashCode() + ringingYear;
     }
 }
-
-
